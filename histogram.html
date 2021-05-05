@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="./histogram.css">
+    <script type="text/javascript" src="./calculate.js"></script>
+</head>
+<body onload="init()">
+    <h1>Histogram Generator</h1>
+    <input type="file" id="csvfile" name="csvfile">
+    <main>
+        <section class="section">
+            <h2>Lower Bounds</h2>
+            <table class="table">
+                <tr>
+                    <td>Max</td>
+                    <td><input type="number" value="100" step="0.1" id="Maxread" class="input"></td>
+                </tr>
+                <tr>
+                    <td>A+</td>
+                    <td><input type="number" value="95" step="0.1" id="A+read" class="input"></td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td><input type="number" value="90" step="0.1"  id="Aread" class="input"></td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td><input type="number" value="85" step="0.1" id="A-read" class="input"></td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td><input type="number" value="80" step="0.1" id="B+read" class="input"></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td><input type="number" value="75" step="0.1" id="Bread" class="input"></td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td><input type="number" value="70" step="0.1" id="B-read" class="input"></td>
+                </tr>
+                <tr>
+                    <td>C+</td>
+                    <td><input type="number" value="65" step="0.1" id="C+read" class="input"></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td><input type="number" value="60" step="0.1" id="Cread" class="input"></td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td><input type="number" value="55" step="0.1" id="C-read" class="input"></td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td><input type="number" value="50" step="0.1" id="Dread" class="input"></td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td><input type="number" value="0" step="0.1" id="Fread" class="input"></td>
+                </tr>
+            </table>
+        </section>
+        <section class="section">
+            <h2>Histogram</h2>
+            <table class="table">
+                <tr>
+                    <td>A+</td>
+                    <td id="A+write"></td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td id="Awrite"></td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td id="A-write"></td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td id="B+write"></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td id="Bwrite"></td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td id="B-write"></td>
+                </tr>
+                <tr>
+                    <td>C+</td>
+                    <td id="C+write"></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td id="Cwrite"></td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td id="C-write"></td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td id="Dwrite"></td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td id="Fwrite"></td>
+                </tr>
+            </table>
+        </section>
+        <section class="section">
+            <h2>Stats</h2>
+            <table class="table">
+                <tr>
+                    <td>Highest</td>
+                    <td id="top"></td>
+                </tr>
+                <tr>
+                    <td>Lowest</td>
+                    <td id="bottom"></td>
+                </tr>
+                <tr>
+                    <td>Mean</td>
+                    <td id="mean"></td>
+                </tr>
+                <tr>
+                    <td>Median</td>
+                    <td id="median"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

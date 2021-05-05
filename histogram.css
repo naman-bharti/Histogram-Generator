@@ -1,0 +1,28 @@
+.section {
+    background-color: #bed8e9;
+    padding: 30px;
+    margin: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.table {
+    padding: 15px;
+    border-spacing: 20px;
+}
+
+td {
+    padding-right: 10px;
+}
+
+main {
+    display: flex;
+}
+
+h2 {
+    color: rgb(207, 54, 54);
+}
+
+input[type="number"], area {
+    width: 60px;
+}
